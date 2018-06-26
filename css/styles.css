@@ -1,44 +1,84 @@
-@charset "utf-8";
 /* CSS Document */
 
-body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-	line-height: 1.5;
+/* ====================== Base Styles ====================== */
+
+/* global reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
 }
+
+/* defines what 1 rem is */
+html {
+  font-size: 62.5%; 
+}
+
 body {
-	background-color: #fdfdfd;
-	margin: 0;
-	position:relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdfdfd;
 }
-ul, li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
+
+/* ====================== Navigation ====================== */
+
+.navigation {
+  width: 100%;
+  height: 6rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  background-color: #252831;
 }
-a {
-	color: orange;
-	text-decoration: none;
+
+.header-heading {
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f18200;
 }
+
+/* ====================== Map ====================== */
+#map {
+  height: 40rem;
+  width: 100%;
+  background-color: #ccc;
+}
+
 a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
 }
-a img{
-	border: none 0px #fff;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px;
-}
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
+/* ====================== Main Content ====================== */
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
 }
+
+.filter-options {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #3397DB;
+  padding: 1rem 1.5rem;
+}
+
+.filter-heading {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.filter-options select {
+  font-size: 11pt;
+  height: 3.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  width: 20rem;
+}
+
 #footer {
   background-color: #444;
   color: #aaa;
@@ -48,23 +88,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
-/* ====================== Navigation ====================== */
-nav {
-  width: 100%;
-  height: 80px;
-  background-color: #252831;
-  text-align:center;
-}
-nav h1 {
-  margin: auto;
-}
-nav h1 a {
-  color: #fff;
-  font-size: 14pt;
-  font-weight: 200;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -97,37 +121,10 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
-/* ====================== Map ====================== */
-#map {
-  height: 400px;
-  width: 100%;
-  background-color: #ccc;
-}
+
 /* ====================== Restaurant Filtering ====================== */
-.filter-options {
-  width: 100%;
-  height: 50px;
-  background-color: #3397DB;
-  align-items: center;
-}
-.filter-options h2 {
-  color: white;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1;
-  margin: 0 20px;
-}
-.filter-options select {
-  background-color: white;
-  border: 1px solid #fff;
-  font-family: Arial,sans-serif;
-  font-size: 11pt;
-  height: 35px;
-  letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 200px;
-}
+
+
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
@@ -156,7 +153,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #f18200; 
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
