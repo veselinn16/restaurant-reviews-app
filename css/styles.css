@@ -11,9 +11,38 @@
   box-sizing: inherit; 
 }
 
+/* big desktop */
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet landscape */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* tablet portrait */
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* phone */
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 /* defines what 1 rem is */
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
+    
 }
 
 body {
@@ -90,12 +119,16 @@ body {
   padding: 3rem 2.5rem;
   width: 27rem;
   list-style: none;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }
 
 .restaurant-img {
   background-color: #ccc;
   width: 100%;
   min-height: 25rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 #restaurants-list h1 {
@@ -233,7 +266,9 @@ a:hover, .footer a:hover {
   padding: 0.2rem 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 #restaurant-address {
@@ -260,6 +295,7 @@ a:hover, .footer a:hover {
 #reviews-list {
   font-size: 1.5rem;
   line-height: 1.5;
+  padding-bottom: 2.5rem;
 }
 
 #reviews-list li {
@@ -267,12 +303,45 @@ a:hover, .footer a:hover {
   border: 2px solid #f3f3f3;
   list-style-type: none;
   margin-top: 3rem;
-  padding: 2rem 2rem;
-  width: 85%;
+  box-sizing: border-box;
+  width: 90%;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
-#reviews-list li p {
-  margin-bottom: 1rem;
+.review-header {
+  background-color: #333;
+  color: #fff;
+  border-top-left-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.name, .date {
+  display: inline-block;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.date {
+  float: right;
+}
+
+.rating {
+  margin: 1.5rem 1.5rem;
+  background-color: #ffa500;
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 0.2rem;
+}
+
+.comment {
+  margin: 0 1.5rem 1.5rem;
 }
 
 .inside-footer {
