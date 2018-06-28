@@ -217,6 +217,10 @@ a:hover, .footer a:hover {
     text-decoration: underline;
 }
 
+#reviews-container {
+  padding-top: 2rem;
+}
+
 #restaurant-name {
   color: #f18200;
   font-size: 2.7rem;
@@ -252,10 +256,6 @@ a:hover, .footer a:hover {
 #restaurant-hours {
   color: #666;
   font-size: 1.5rem;
-}
-
-#reviews-container {
-  padding-top: 2rem;
 }
 
 #reviews-container h2 {
