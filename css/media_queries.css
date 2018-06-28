@@ -1,72 +1,55 @@
 /* phone */
 @media only screen and (max-width: 37.5em) {
-  .filter-heading {
-    color: black;
-  }
-
-  #restaurants-list {
-    padding: 0;
+  #restaurants-list {    
+    padding: 2rem 0;
   }
 
   #restaurants-list li {
-    width: 70%;
-    margin-left: 5rem;
+    margin: 0 10% 2rem 10%;
+    width: 80%;
   }
-
 }
 
 /* tablet portrait */
-@media only screen and (max-width: 56.25em) and (min-width: 37.56em) {
+@media only screen and (max-width: 48em) and (min-width: 37.56em) {
   html {
     font-size: 50%;
   }
 
   #restaurants-list li {
-    width: 40%;
-    margin: 1rem;
-  }
-
-  #restaurants-list {
-    padding: 0;
-  }
-
-  .filter-heading {
-      color: yellow;
+    width: 45%;
+    margin: 2.5%;
   }
 }
 
-@media only screen and (min-width: 64em) {
+/* @media only screen and (min-width: 64em) {
    .filter-heading {
     color: blue;
   }
 
-}
+} */
 
 /* tablet landscape */
-@media only screen and (max-width: 58.15em) and (min-width: 56.3em) {
+@media only screen and (max-width: 75em) and (min-width: 48em) {
   html {
     font-size: 56.25%;
   }
 
-  #restaurants-list {
-    padding: 0;
-  }
-
   #restaurants-list li {
-    margin: 1rem;
+    margin: 1.6%;
+    width: 30%;
   }
+}
 
-  .filter-heading {
-    color: red;
+@media only screen and (min-width: 64rem) and (max-width: 75rem) {
+  html {
+    font-size: 62.5%;
   }
 }
 
 /* big desktop */
 @media only screen and (min-width: 112.5em) {
   html {
-    font-size: 75%;
-  }
-  .filter-heading{
-    color: green;
+    font-size: 80%;
   }
 }

@@ -14,7 +14,6 @@
 /* defines what 1 rem is */
 html {
   font-size: 62.5%;
-    
 }
 
 
@@ -81,17 +80,17 @@ body {
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
-  padding: 2rem 9rem;
 }
 
 #restaurants-list li {
   background-color: #fff;
   border: 0.2rem solid #ccc;
   display: inline-block;
-  margin: 2rem;
+  box-sizing: border-box;
+  margin: 1%;
   min-height: 38rem;
   padding: 3rem 2.5rem;
-  width: 27rem;
+  width: 23%;
   list-style: none;
   border-top-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
