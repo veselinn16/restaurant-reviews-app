@@ -1,0 +1,72 @@
+/* phone */
+@media only screen and (max-width: 37.5em) {
+  .filter-heading {
+    color: black;
+  }
+
+  #restaurants-list {
+    padding: 0;
+  }
+
+  #restaurants-list li {
+    width: 70%;
+    margin-left: 5rem;
+  }
+
+}
+
+/* tablet portrait */
+@media only screen and (max-width: 56.25em) and (min-width: 37.56em) {
+  html {
+    font-size: 50%;
+  }
+
+  #restaurants-list li {
+    width: 40%;
+    margin: 1rem;
+  }
+
+  #restaurants-list {
+    padding: 0;
+  }
+
+  .filter-heading {
+      color: yellow;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+   .filter-heading {
+    color: blue;
+  }
+
+}
+
+/* tablet landscape */
+@media only screen and (max-width: 58.15em) and (min-width: 56.3em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  #restaurants-list {
+    padding: 0;
+  }
+
+  #restaurants-list li {
+    margin: 1rem;
+  }
+
+  .filter-heading {
+    color: red;
+  }
+}
+
+/* big desktop */
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+  .filter-heading{
+    color: green;
+  }
+}
