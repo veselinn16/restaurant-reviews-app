@@ -232,7 +232,3 @@ cSelect.addEventListener('click', function () {
     this.setAttribute("aria-expanded", "false");
   }
 });
-
-self.addEventListener('fetch', function (event) {
-  console.log(event.request)
-})
